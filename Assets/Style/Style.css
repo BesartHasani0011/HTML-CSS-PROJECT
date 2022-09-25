@@ -84,30 +84,6 @@ header .social-media ul li a:hover {
 
 }
 
-nav {
-    margin-top: 15px;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 5px;
-
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul a:hover {
-    border-bottom: 3px solid var(--font-color);
-}
 
 main .photo img {
     width: 100%;
@@ -133,7 +109,8 @@ main .main-text-box a {
     justify-content: center;
     align-items: center;
 }
-main .main-text-box .shop{
+
+main .main-text-box .shop {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -313,6 +290,30 @@ footer .others div a:hover {
         background: black;
 
     }
+
+    nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 15px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+        padding-right: 15px;
+    }
+
+    .mobile-nav p {
+        font-weight: bold;
+        padding: 5px;
+        padding-right: 10px;
+    }
+
+    .mobile-nav i{
+        font-size: 30px;
+    }
+
 }
 
 @media (min-width:640px) {
@@ -340,6 +341,36 @@ footer .others div a:hover {
         grid-template-rows: 1fr 1r;
         background: black;
 
+    }
+
+    nav {
+        margin-top: 15px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul a:hover {
+        border-bottom: 3px solid var(--font-color);
+    }
+
+
+    .mobile-nav {
+        display: none;
     }
 }
 
@@ -370,5 +401,34 @@ footer .others div a:hover {
         grid-template-columns: 1fr 1fr;
         background: black;
 
+    }
+
+    nav {
+        margin-top: 15px;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul a:hover {
+        border-bottom: 3px solid var(--font-color);
+    }
+
+    .mobile-nav {
+        display: none;
     }
 }
